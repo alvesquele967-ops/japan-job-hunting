@@ -1,0 +1,98 @@
+{
+  "CyberAgent": {
+    "自己紹介": {
+      "codepoints": 90,
+      "utf16": 90,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "志望動機": {
+      "codepoints": 223,
+      "utf16": 223,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "インターンシップ経験の説明": {
+      "codepoints": 122,
+      "utf16": 122,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "入社後に取り組みたいこと": {
+      "codepoints": 93,
+      "utf16": 93,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "語学力の説明": {
+      "codepoints": 69,
+      "utf16": 69,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    }
+  },
+  "UNIQLO": {
+    "自己紹介": {
+      "codepoints": 90,
+      "utf16": 90,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "志望動機": {
+      "codepoints": 229,
+      "utf16": 229,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "インターンシップ経験の説明": {
+      "codepoints": 122,
+      "utf16": 122,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "入社後に取り組みたいこと": {
+      "codepoints": 100,
+      "utf16": 100,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "語学力の説明": {
+      "codepoints": 69,
+      "utf16": 69,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    }
+  },
+  "Rakuten": {
+    "自己紹介": {
+      "codepoints": 90,
+      "utf16": 90,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "志望動機": {
+      "codepoints": 242,
+      "utf16": 242,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "インターンシップ経験の説明": {
+      "codepoints": 122,
+      "utf16": 122,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "入社後に取り組みたいこと": {
+      "codepoints": 98,
+      "utf16": 98,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    },
+    "語学力の説明": {
+      "codepoints": 69,
+      "utf16": 69,
+      "official_limit": "UNKNOWN",
+      "draft_limit": 400
+    }
+  }
+}

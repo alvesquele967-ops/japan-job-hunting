@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "rakuten",
+  "kind": "company",
+  "updated_at": "2026-09-07T12:34:08.638246+00:00",
+  "data": {
+    "name": "楽天グループ",
+    "last_verified_at": "2026-09-07T12:31:50.978456+00:00",
+    "sources": [
+      {
+        "id": "s0",
+        "title": "楽天グループ官方招聘",
+        "url": "https://corp.rakuten.co.jp/careers/graduates/recruit_business/",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "2027-10+",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      },
+      {
+        "id": "s1",
+        "title": "楽天グループ官方招聘",
+        "url": "https://corp.rakuten.co.jp/careers/graduates/recruit_business/business.html",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "2027-10+",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      }
+    ],
+    "next_action": "2027年10月以后注册入口已公开。35万税前及40小时固定加班为2026秋/2027春批次参考，不能当作2027秋确定待遇；当前批次要求商务日语、入职前TOEIC800或同等；东京和签证待核验。",
+    "candidate_update": {
+      "fact_ids": [
+        "english-self-zero"
+      ],
+      "recommendation": "暂不主推，现有参考批次入职英语要求与当前能力存在明显差距，2027秋要求仍待核验"
+    }
+  }
+}

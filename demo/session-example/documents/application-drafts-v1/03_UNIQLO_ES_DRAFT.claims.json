@@ -1,0 +1,59 @@
+{
+  "claims": [
+    {
+      "text": "education.current: 国内大学在读，电商专业",
+      "fact_id": "education-current",
+      "value": "国内大学在读，电商专业"
+    },
+    {
+      "text": "education.graduation: 2027-06，依据当前日期解释用户的明年6月",
+      "fact_id": "graduation-20260907",
+      "value": "2027-06，依据当前日期解释用户的明年6月"
+    },
+    {
+      "text": "internships: 有电商实习，职责、时长、工具与成果待补充",
+      "fact_id": "ecommerce-internship",
+      "value": "有电商实习，职责、时长、工具与成果待补充"
+    },
+    {
+      "text": "experience.independent_operations: 无独立开店或运营账号经历",
+      "fact_id": "no-independent-store-account",
+      "value": "无独立开店或运营账号经历"
+    },
+    {
+      "text": "languages.japanese: {'self_assessed': 'N2', 'JLPT_certificate': '未考', 'conversation': '能稍微日常对话，工作日语不熟练'}",
+      "fact_id": "japanese-20260907",
+      "value": {
+        "self_assessed": "N2",
+        "JLPT_certificate": "未考",
+        "conversation": "能稍微日常对话，工作日语不熟练"
+      }
+    },
+    {
+      "text": "languages.english: 用户自述近乎零基础，无英语成绩或证书",
+      "fact_id": "english-self-zero",
+      "value": "用户自述近乎零基础，无英语成绩或证书"
+    },
+    {
+      "text": "preferences.location: 日本东京",
+      "fact_id": "target-tokyo",
+      "value": "日本东京"
+    },
+    {
+      "text": "career.route: 毕业后直接赴日工作",
+      "fact_id": "route-20260907",
+      "value": "毕业后直接赴日工作"
+    },
+    {
+      "text": "salary: {'minimum': 12000, 'currency': 'CNY', 'period': 'month', 'tax_basis': 'net'}",
+      "fact_id": "salary-20260907",
+      "value": {
+        "minimum": 12000,
+        "currency": "CNY",
+        "period": "month",
+        "tax_basis": "net"
+      }
+    }
+  ],
+  "review": "Japanese paraphrases checked. Motives and future plans are draft intentions, not confirmed past facts."
+}

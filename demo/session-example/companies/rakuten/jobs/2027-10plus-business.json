@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "rakuten-business",
+  "kind": "job",
+  "updated_at": "2026-09-07T12:31:50.978456+00:00",
+  "data": {
+    "role": "ビジネス総合",
+    "recruitment_year": "2027-10+",
+    "eligibility": "NEEDS_VERIFICATION",
+    "facts": [
+      {
+        "field": "gross_monthly_salary_jpy",
+        "value": 350000,
+        "source_ids": [
+          "s1"
+        ],
+        "recruitment_year": "2026-10/2027-04",
+        "year_status": "PAST_REFERENCE",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "notes": "2027年10月以后注册入口已公开。35万税前及40小时固定加班为2026秋/2027春批次参考，不能当作2027秋确定待遇；当前批次要求商务日语、入职前TOEIC800或同等；东京和签证待核验。",
+    "location": "东京配属待确认",
+    "visa_support": "UNKNOWN",
+    "base_salary": "UNKNOWN",
+    "deadline": "UNKNOWN"
+  }
+}

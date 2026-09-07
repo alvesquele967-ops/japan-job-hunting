@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "cyberagent",
+  "kind": "company",
+  "updated_at": "2026-09-07T12:31:50.978456+00:00",
+  "data": {
+    "name": "CyberAgent",
+    "last_verified_at": "2026-09-07T12:31:50.978456+00:00",
+    "sources": [
+      {
+        "id": "s0",
+        "title": "CyberAgent官方招聘",
+        "url": "https://www.cyberagent.co.jp/careers/students/biz2028/",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "2028",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      },
+      {
+        "id": "s1",
+        "title": "CyberAgent官方招聘",
+        "url": "https://www.cyberagent.co.jp/careers/news/detail/id%3D33728",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "2028",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      },
+      {
+        "id": "s2",
+        "title": "CyberAgent官方招聘",
+        "url": "https://www.cyberagent.co.jp/careers/about/",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "2028",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      }
+    ],
+    "next_action": "2028批次已公布；2027-03-31正午日本时间为注册截止，满额可提前结束。海外2027年6月毕业资格及签证未确认；东京不保证；月给制固定时间外80小时、深夜46小时，非实际加班时数。"
+  }
+}

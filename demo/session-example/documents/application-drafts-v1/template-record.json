@@ -1,0 +1,7 @@
+{
+  "template": "<skill>/templates/resume/rirekisho_01_A4.docx",
+  "sha256": "abdc61c0eb2e67a6826a5f0bedc756eabe119e79530ec34347ee02da475bfca1",
+  "source": "https://next.rikunabi.com/tenshokuknowhow/rirekisho/template/",
+  "mapping": "T0 name; T1 education and internship; T3 qualifications; T4 profile; T5 preferences",
+  "format_changes": "Original page and table geometry preserved"
+}

@@ -1,0 +1,6 @@
+{
+  "text_and_claims": "PASS",
+  "character_count": "PASS: 15 responses under self-selected 400 character cap; actual portal limits UNKNOWN",
+  "visual_qa": "NOT_COMPLETED",
+  "reason": "render_docx.py attempted; soffice.exe not found. No bundled LibreOffice executable available in runtime. Layout not claimed verified."
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "cyberagent-business",
+  "kind": "job",
+  "updated_at": "2026-09-07T12:31:50.978456+00:00",
+  "data": {
+    "role": "2028ビジネスコース",
+    "recruitment_year": "2028",
+    "eligibility": "NEEDS_VERIFICATION",
+    "facts": [
+      {
+        "field": "gross_monthly_salary_jpy",
+        "value": 420000,
+        "source_ids": [
+          "s2"
+        ],
+        "recruitment_year": "2028",
+        "year_status": "CURRENT",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "notes": "2028批次已公布；2027-03-31正午日本时间为注册截止，满额可提前结束。海外2027年6月毕业资格及签证未确认；东京不保证；月给制固定时间外80小时、深夜46小时，非实际加班时数。",
+    "location": "东京配属待确认",
+    "visa_support": "UNKNOWN",
+    "base_salary": "UNKNOWN",
+    "deadline": "2027-03-31T12:00:00+09:00"
+  }
+}

@@ -112,4 +112,38 @@ demo/                          # 虚构人物的端到端演示与测试
 
 ![演示流程](demo/assets/synthetic-demo.svg)
 
+### 实际会话的轻量展示
+
+下面是一轮手动测试留下的部分结果。测试时误用了 GPT-6，额度消耗较快，因此跳过了不少追问，只进行了轻量功能展示。截图和输出文件只展示了求职画像补充、公司初筛、企业记录以及履歴書／ES 草稿等部分流程，并不代表 Skill 的全部功能。
+
+演示文件可直接浏览或下载：
+
+- [全部轻量演示文件](demo/session-example/)
+- [公司研究与 ES 记录目录](demo/session-example/companies/)
+- [履歴書、ES 与校验文件目录](demo/session-example/documents/)
+- [四份申请材料草稿目录](demo/session-example/documents/application-drafts-v1/)
+- [申请材料 ZIP 下载包](demo/session-example/documents/Tokyo_Application_Drafts_v1.zip)
+
+运行时仍使用当前项目下的 `.jobhunt/companies/` 和 `.jobhunt/documents/`；上面的 `demo/session-example/` 只是可公开浏览的演示副本。
+
+#### 1. 首次调用与画像补充
+
+![首次调用与画像补充](demo/assets/session-example/01-first-call-intake.png)
+
+#### 2. 条件换算与公司初筛
+
+![条件换算与公司初筛](demo/assets/session-example/02-company-research.png)
+
+#### 3. 根据新增经历更新画像
+
+![根据新增经历更新画像](demo/assets/session-example/03-profile-update.png)
+
+#### 4. 生成履歴書与三家公司 ES 草稿
+
+![生成申请材料包](demo/assets/session-example/04-document-package.png)
+
+#### 5. 生成文件索引
+
+![生成文件索引](demo/assets/session-example/05-generated-file-index.png)
+
 格式参考：[Codex Skills](https://learn.chatgpt.com/docs/build-skills) 与 [Agent Skills specification](https://agentskills.io/specification)。

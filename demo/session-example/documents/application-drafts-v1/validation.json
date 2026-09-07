@@ -1,0 +1,97 @@
+[
+  {
+    "file": "CyberAgent_1.txt",
+    "exit": 0,
+    "result": "{\"count\": 90, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 90, \"utf16\": 90, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "CyberAgent_2.txt",
+    "exit": 0,
+    "result": "{\"count\": 223, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 223, \"utf16\": 223, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "CyberAgent_3.txt",
+    "exit": 0,
+    "result": "{\"count\": 122, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 122, \"utf16\": 122, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "CyberAgent_4.txt",
+    "exit": 0,
+    "result": "{\"count\": 93, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 93, \"utf16\": 93, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "CyberAgent_5.txt",
+    "exit": 0,
+    "result": "{\"count\": 69, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 69, \"utf16\": 69, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "Rakuten_1.txt",
+    "exit": 0,
+    "result": "{\"count\": 90, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 90, \"utf16\": 90, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "Rakuten_2.txt",
+    "exit": 0,
+    "result": "{\"count\": 242, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 242, \"utf16\": 242, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "Rakuten_3.txt",
+    "exit": 0,
+    "result": "{\"count\": 122, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 122, \"utf16\": 122, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "Rakuten_4.txt",
+    "exit": 0,
+    "result": "{\"count\": 98, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 98, \"utf16\": 98, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "Rakuten_5.txt",
+    "exit": 0,
+    "result": "{\"count\": 69, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 69, \"utf16\": 69, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "UNIQLO_1.txt",
+    "exit": 0,
+    "result": "{\"count\": 90, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 90, \"utf16\": 90, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "UNIQLO_2.txt",
+    "exit": 0,
+    "result": "{\"count\": 229, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 229, \"utf16\": 229, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "UNIQLO_3.txt",
+    "exit": 0,
+    "result": "{\"count\": 122, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 122, \"utf16\": 122, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "UNIQLO_4.txt",
+    "exit": 0,
+    "result": "{\"count\": 100, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 100, \"utf16\": 100, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "UNIQLO_5.txt",
+    "exit": 0,
+    "result": "{\"count\": 69, \"limit\": 400, \"within_limit\": true, \"mode\": \"codepoints\", \"codepoints\": 69, \"utf16\": 69, \"exclude_newlines\": false, \"exclude_whitespace\": false}\n"
+  },
+  {
+    "file": "01_Rirekisho_DRAFT.claims.json",
+    "exit": 0,
+    "result": "{\n  \"valid\": true,\n  \"errors\": [],\n  \"limitation\": \"Does not detect undeclared natural-language claims or visually inspect documents\"\n}\n"
+  },
+  {
+    "file": "02_CyberAgent_ES_DRAFT.claims.json",
+    "exit": 0,
+    "result": "{\n  \"valid\": true,\n  \"errors\": [],\n  \"limitation\": \"Does not detect undeclared natural-language claims or visually inspect documents\"\n}\n"
+  },
+  {
+    "file": "03_UNIQLO_ES_DRAFT.claims.json",
+    "exit": 0,
+    "result": "{\n  \"valid\": true,\n  \"errors\": [],\n  \"limitation\": \"Does not detect undeclared natural-language claims or visually inspect documents\"\n}\n"
+  },
+  {
+    "file": "04_Rakuten_ES_DRAFT.claims.json",
+    "exit": 0,
+    "result": "{\n  \"valid\": true,\n  \"errors\": [],\n  \"limitation\": \"Does not detect undeclared natural-language claims or visually inspect documents\"\n}\n"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "fast-retailing-business",
+  "kind": "job",
+  "updated_at": "2026-09-07T12:31:50.978456+00:00",
+  "data": {
+    "role": "グローバルリーダー候補",
+    "recruitment_year": "ROLLING",
+    "eligibility": "NEEDS_VERIFICATION",
+    "facts": [
+      {
+        "field": "gross_monthly_salary_jpy",
+        "value": 370000,
+        "source_ids": [
+          "s0"
+        ],
+        "recruitment_year": "ROLLING",
+        "year_status": "UNKNOWN",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "notes": "通年招聘，海外可在线选考，商务日语；9月入职可衔接毕业但2027期限待核验。全国门店和转勤，无法保证东京，仅条件性备选。GU的9月入职在募集页与通年FAQ表述不一致，本轮不推荐GU秋季。",
+    "location": "东京配属待确认",
+    "visa_support": "UNKNOWN",
+    "base_salary": "UNKNOWN",
+    "deadline": "UNKNOWN"
+  }
+}

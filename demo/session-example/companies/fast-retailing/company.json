@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "fast-retailing",
+  "kind": "company",
+  "updated_at": "2026-09-07T12:31:50.978456+00:00",
+  "data": {
+    "name": "ユニクロ / Fast Retailing",
+    "last_verified_at": "2026-09-07T12:31:50.978456+00:00",
+    "sources": [
+      {
+        "id": "s0",
+        "title": "ユニクロ / Fast Retailing官方招聘",
+        "url": "https://www.fastretailing.com/employment/ja/fastretailing/jp/graduate/recruit/?flow_type=self",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "ROLLING",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      },
+      {
+        "id": "s1",
+        "title": "ユニクロ / Fast Retailing官方招聘",
+        "url": "https://www.fastretailing.com/employment/ja/fastretailing/jp/graduate/recruit/year_round_recruitment.html",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "ROLLING",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      },
+      {
+        "id": "s2",
+        "title": "ユニクロ / Fast Retailing官方招聘",
+        "url": "https://www.fastretailing.com/employment/ja/fastretailing/jp/graduate/recruit/faq.html",
+        "source_type": "official_recruitment",
+        "official": true,
+        "publication_date": "UNKNOWN",
+        "last_updated": "UNKNOWN",
+        "recruitment_year": "ROLLING",
+        "retrieved_at": "2026-09-07T12:31:50.978456+00:00",
+        "confidence": "官方页面；不同批次与未知条件在备注中区分"
+      }
+    ],
+    "next_action": "通年招聘，海外可在线选考，商务日语；9月入职可衔接毕业但2027期限待核验。全国门店和转勤，无法保证东京，仅条件性备选。GU的9月入职在募集页与通年FAQ表述不一致，本轮不推荐GU秋季。"
+  }
+}

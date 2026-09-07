@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "cyberagent-es-v1",
+  "kind": "es",
+  "updated_at": "2026-09-07T12:42:39.648772+00:00",
+  "data": {
+    "status": "DRAFT",
+    "recruitment_year": "2028",
+    "official_questions_status": "UNKNOWN",
+    "questions": [
+      {
+        "id": "1",
+        "text": "自己紹介",
+        "max_chars": "UNKNOWN",
+        "draft_target": 400,
+        "count_rule": "Unicode code points; exact answer only",
+        "required": "UNKNOWN",
+        "year_status": "UNKNOWN",
+        "source_ids": [],
+        "counts": {
+          "codepoints": 90,
+          "utf16": 90,
+          "official_limit": "UNKNOWN",
+          "draft_limit": 400
+        }
+      },
+      {
+        "id": "2",
+        "text": "志望動機",
+        "max_chars": "UNKNOWN",
+        "draft_target": 400,
+        "count_rule": "Unicode code points; exact answer only",
+        "required": "UNKNOWN",
+        "year_status": "UNKNOWN",
+        "source_ids": [],
+        "counts": {
+          "codepoints": 223,
+          "utf16": 223,
+          "official_limit": "UNKNOWN",
+          "draft_limit": 400
+        }
+      },
+      {
+        "id": "3",
+        "text": "インターンシップ経験の説明",
+        "max_chars": "UNKNOWN",
+        "draft_target": 400,
+        "count_rule": "Unicode code points; exact answer only",
+        "required": "UNKNOWN",
+        "year_status": "UNKNOWN",
+        "source_ids": [],
+        "counts": {
+          "codepoints": 122,
+          "utf16": 122,
+          "official_limit": "UNKNOWN",
+          "draft_limit": 400
+        }
+      },
+      {
+        "id": "4",
+        "text": "入社後に取り組みたいこと",
+        "max_chars": "UNKNOWN",
+        "draft_target": 400,
+        "count_rule": "Unicode code points; exact answer only",
+        "required": "UNKNOWN",
+        "year_status": "UNKNOWN",
+        "source_ids": [],
+        "counts": {
+          "codepoints": 93,
+          "utf16": 93,
+          "official_limit": "UNKNOWN",
+          "draft_limit": 400
+        }
+      },
+      {
+        "id": "5",
+        "text": "語学力の説明",
+        "max_chars": "UNKNOWN",
+        "draft_target": 400,
+        "count_rule": "Unicode code points; exact answer only",
+        "required": "UNKNOWN",
+        "year_status": "UNKNOWN",
+        "source_ids": [],
+        "counts": {
+          "codepoints": 69,
+          "utf16": 69,
+          "official_limit": "UNKNOWN",
+          "draft_limit": 400
+        }
+      }
+    ],
+    "used_fact_ids": [
+      "education-current",
+      "graduation-20260907",
+      "ecommerce-internship",
+      "no-independent-store-account",
+      "japanese-20260907",
+      "english-self-zero",
+      "target-tokyo"
+    ],
+    "documents": [
+      ".jobhunt/documents/application-drafts-v1/02_CyberAgent_ES_DRAFT.docx"
+    ],
+    "next_action": "正式题目与个人身份信息到位后修订；没有提交或联系公司"
+  }
+}
