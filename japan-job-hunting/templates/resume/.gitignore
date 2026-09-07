@@ -1,5 +1,2 @@
-# Local templates are not published; keep only documentation and source catalog.
-*
-!.gitignore
-!GUIDE.md
-!manifest.json
+# Blank templates in this directory are part of the distributable Skill.
+# Keep completed resumes in the project's .jobhunt/ directory instead.
