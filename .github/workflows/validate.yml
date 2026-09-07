@@ -1,0 +1,34 @@
+name: Validate Skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate demo workspace
+        run: python japan-job-hunting/scripts/validate.py --root demo/synthetic-workspace
+
+      - name: Run behavioral checks
+        run: python demo/run_demo_tests.py
+
+      - name: Check bundled template count
+        shell: bash
+        run: |
+          count=$(find japan-job-hunting/templates/resume -maxdepth 1 -type f \( -name '*.docx' -o -name '*.xlsx' -o -name '*.pdf' \) | wc -l)
+          test "$count" -eq 48

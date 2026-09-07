@@ -1,5 +1,10 @@
 # Japan Job Hunting · 日本就活 Agent
 
+[![Validate Skill](https://github.com/alvesquele967-ops/japan-job-hunting/actions/workflows/validate.yml/badge.svg)](https://github.com/alvesquele967-ops/japan-job-hunting/actions/workflows/validate.yml)
+[![GitHub tag](https://img.shields.io/github/v/tag/alvesquele967-ops/japan-job-hunting?label=release&color=0969da)](https://github.com/alvesquele967-ops/japan-job-hunting/tags)
+![Resume templates](https://img.shields.io/badge/resume_templates-48-8250df)
+![Formats](https://img.shields.io/badge/formats-DOCX%20%7C%20XLSX%20%7C%20PDF-1f883d)
+
 面向日本新卒、留学生和外国人赴日求职的 Codex Skill。它把求职画像、公司研究、申请材料、选考准备和进度管理放在同一套本地工作区中，方便持续推进。
 
 ## 能做什么
