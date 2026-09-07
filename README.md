@@ -146,4 +146,11 @@ demo/                          # 虚构人物的端到端演示与测试
 
 ![生成文件索引](demo/assets/session-example/05-generated-file-index.png)
 
+#### 6. 自动选择简历模版生成以及ES填写
+
+请注意：当前信息为本人根据我朋友的信息大概写的，以下演示图片展示部分为已经告诉AI的信息，包括未填写部分是需要告诉AI之后才会自己填写的  
+然后ES的话最好是直接去官网复制或者截图过来，这里的ES自动回答仅做效果参考演示，大部分企业都是需要申请完投递之后才能拿到ES的，所有这里不做具体完整演示了。
+
+![img.png](img.png)![img_1.png](img_1.png)
+
 格式参考：[Codex Skills](https://learn.chatgpt.com/docs/build-skills) 与 [Agent Skills specification](https://agentskills.io/specification)。
