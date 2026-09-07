@@ -51,7 +51,7 @@ def main() -> None:
     scanned = "\n".join(path.read_text(encoding="utf-8") for path in ROOT.rglob("*") if path.is_file() and path.suffix in {".md", ".json", ".html", ".py"})
     forbidden = [r"C:\\\\Users\\", r"E:\\\\box\\", r"sk-[A-Za-z0-9_-]{12,}"]
     check(not any(re.search(pattern, scanned) for pattern in forbidden), "Synthetic demo contains a local path or token pattern")
-    print(f"PASS: {checks} checks — synthetic demo only; no user workspace read")
+    print(f"PASS: {checks} checks")
 
 
 if __name__ == "__main__":

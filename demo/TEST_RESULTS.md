@@ -23,7 +23,7 @@ python demo/run_demo_tests.py
 预期输出：
 
 ```text
-PASS: 9 checks — demo data only
+PASS: 9 checks
 ```
 
 真实使用时，招聘资格、截止日期和薪资应以当前年度的官方来源为准。
