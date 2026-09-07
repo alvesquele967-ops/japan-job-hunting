@@ -46,7 +46,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "field": {
           "type": "string"
@@ -79,7 +80,8 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         },
         "title": {
           "type": "string"
@@ -165,7 +167,10 @@
         },
         "value": {},
         "source_ids": {
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "recruitment_year": {
           "type": [
@@ -331,6 +336,38 @@
               "last_update"
             ],
             "additionalProperties": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "enum": [
+              "company",
+              "job"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "properties": {
+              "facts": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/companyFact"
+                }
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/source"
+                }
+              }
+            }
           }
         }
       }

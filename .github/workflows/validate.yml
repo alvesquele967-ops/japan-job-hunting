@@ -21,6 +21,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install script dependencies
+        run: python -m pip install -r japan-job-hunting/requirements.txt
+
+      - name: Run validation regressions
+        run: python -m unittest discover -s japan-job-hunting/tests
+
       - name: Validate demo workspace
         run: python japan-job-hunting/scripts/validate.py --root demo/synthetic-workspace
 

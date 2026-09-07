@@ -154,3 +154,5 @@ demo/                          # 虚构人物的端到端演示与测试
 ![img.png](img.png)![img_1.png](img_1.png)
 
 格式参考：[Codex Skills](https://learn.chatgpt.com/docs/build-skills) 与 [Agent Skills specification](https://agentskills.io/specification)。
+
+脚本首次运行前安装依赖：`python -m pip install -r japan-job-hunting/requirements.txt`（jsonschema 数据校验、pypdf 模板扫描）。

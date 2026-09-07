@@ -6,35 +6,42 @@ KINDS='profile facts preferences stories company job application es interview of
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
 def errors(obj):
-    result=[]
-    if not isinstance(obj,dict):return ['record must be an object']
-    for k in ['schema_version','id','kind','updated_at','data']:
-        if k not in obj:result.append('missing '+k)
-    if obj.get('schema_version')!=1:result.append('unsupported schema_version')
-    if not isinstance(obj.get('id'),str) or not obj.get('id'):result.append('invalid id')
-    if obj.get('kind') not in KINDS:result.append('invalid kind')
+    from jsonschema import Draft202012Validator, FormatChecker
+    schema = read(Path(__file__).resolve().parents[1]/'schemas/record.schema.json')
+    result = [str(e.json_path)+': '+e.message for e in
+              Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(obj)]
+    if result:
+        return result
     try:
-        d=datetime.datetime.fromisoformat(obj.get('updated_at','').replace('Z','+00:00'))
-        if d.tzinfo is None:raise ValueError()
-    except (ValueError,TypeError):result.append('updated_at requires ISO timezone')
-    data=obj.get('data')
-    if not isinstance(data,dict):return result+['data must be object']
-    if obj.get('kind')=='application':
-        for k in ['company_id','job_id','recruitment_year','status','deadlines','next_action','documents','pending','last_update']:
-            if k not in data:result.append('application missing '+k)
-        if data.get('status') not in STATUSES:result.append('invalid application status')
-    if obj.get('kind')=='facts':
-        facts=data.get('facts')
-        if not isinstance(facts,list):return result+['facts must be array']
-        ids=set()
-        for f in facts:
-            if not isinstance(f,dict):result.append('fact must be object');continue
-            if not f.get('id') or f['id'] in ids:result.append('missing/duplicate fact id')
-            ids.add(f.get('id'))
-            if f.get('status') not in ['VERIFIED','USER_CONFIRMED','INFERRED','UNVERIFIED']:result.append('invalid fact status')
-            for k in ['field','value','evidence','confirmed_at']:
-                if k not in f:result.append('fact missing '+k)
+        stamp = datetime.datetime.fromisoformat(obj['updated_at'].replace('Z', '+00:00'))
+        if stamp.tzinfo is None:raise ValueError('missing timezone')
+    except ValueError:
+        result.append('updated_at requires ISO timezone')
+    if obj['kind'] == 'facts':
+        ids = [f['id'] for f in obj['data']['facts']]
+        if len(ids) != len(set(ids)):
+            result.append('duplicate fact id')
+    if obj['kind'] in ('company', 'job'):
+        sources = obj['data'].get('sources', [])
+        ids = [source['id'] for source in sources]
+        if len(ids) != len(set(ids)):
+            result.append('duplicate source id')
     return result
+
+
+def path_errors(relative, kind):
+    parts = Path(relative).parts
+    if len(parts) == 2 and parts[0] == 'candidate':
+        valid = kind in ('profile', 'facts', 'preferences', 'stories') and parts[1] == kind+'.json'
+    elif len(parts) == 2 and parts[0] in ('applications', 'discoveries'):
+        valid = kind == {'applications': 'application', 'discoveries': 'discovery'}[parts[0]]
+    elif len(parts) == 3 and parts[0] == 'companies':
+        valid = parts[2] == 'company.json' and kind == 'company'
+    elif len(parts) == 4 and parts[0] == 'companies':
+        valid = kind == {'jobs': 'job', 'es': 'es', 'interviews': 'interview', 'offers': 'offer'}.get(parts[2])
+    else:
+        valid = False
+    return [] if valid else ['record kind does not match canonical workspace path: '+str(relative)]
 
 def root_path(p):
     root=p.resolve();skill=Path(__file__).resolve().parents[1]
@@ -45,6 +52,7 @@ def save(root,relative,obj):
     root=root_path(root);target=(root/relative).resolve()
     if root not in target.parents or target.suffix!='.json':raise ValueError('Target must be JSON within workspace')
     issues=errors(obj)
+    if not issues:issues=path_errors(target.relative_to(root),obj['kind'])
     if issues:raise ValueError('; '.join(issues))
     target.parent.mkdir(parents=True,exist_ok=True)
     if target.exists():
