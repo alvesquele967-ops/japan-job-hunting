@@ -1,0 +1,25 @@
+# Private job-search workspaces and local input/output
+.jobhunt/
+private/
+.local/
+.env
+.env.*
+!.env.example
+
+# Local build scripts, test runs and delivery reports
+/build/
+/dist/
+/DELIVERY.md
+/VALIDATION.md
+*.zip
+
+# Editor and Python artifacts
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db

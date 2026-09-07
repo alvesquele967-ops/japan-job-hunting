@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "profile",
+  "kind": "profile",
+  "updated_at": "2026-09-07T12:00:00+00:00",
+  "data": {
+    "demo_only": true,
+    "candidate_alias": "Lin Cheng (fictional)",
+    "fact_ids": ["f-graduation", "f-stack", "f-project", "f-japanese", "f-location", "f-visa"],
+    "next_action": "Search official current-year sources; do not apply using fictional data."
+  }
+}

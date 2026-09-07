@@ -1,0 +1,3 @@
+# Third-party filled examples stay local.
+*
+!.gitignore

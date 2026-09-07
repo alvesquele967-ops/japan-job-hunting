@@ -1,0 +1,6 @@
+interface:
+  display_name: "日本就活 Agent"
+  short_description: "日本新卒与赴日就业：公司发现、企业研究、申请材料、面试及内定管理"
+  default_prompt: "使用 $japan-job-hunting，读取已有求职画像，帮我推进日本求职。"
+policy:
+  allow_implicit_invocation: true

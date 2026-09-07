@@ -1,0 +1,5 @@
+# Local templates are not published; keep only documentation and source catalog.
+*
+!.gitignore
+!GUIDE.md
+!manifest.json

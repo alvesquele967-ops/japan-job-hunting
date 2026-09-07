@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japan Job Hunting Skill — Synthetic Demo</title>
+<style>
+  :root { --ink:#1d2939; --muted:#64748b; --line:#dce4ef; --canvas:#f4f7fb; --card:#fff; --accent:#635bff; --warn:#a15c00; --warn-bg:#fff5e3; --ok:#067647; }
+  *{box-sizing:border-box} body{margin:0;background:var(--canvas);color:var(--ink);font:15px/1.55 Inter,"Noto Sans SC",system-ui,sans-serif}
+  main{max-width:1100px;margin:0 auto;padding:48px 28px 72px}.tag{display:inline-block;color:#483cbe;background:#eceaff;border-radius:99px;padding:4px 11px;font-size:12px;font-weight:700;letter-spacing:.04em}
+  h1{font-size:36px;line-height:1.15;margin:14px 0 9px} .lead{max-width:720px;color:var(--muted);font-size:17px}.notice{margin:26px 0;padding:14px 18px;border-left:4px solid #e3a008;background:#fffbeb;border-radius:7px;color:#805b10}
+  .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 1px 2px #0b17301a}.card h2{font-size:17px;margin:0 0 14px}.turn{border-left:3px solid var(--accent);padding-left:13px;margin:16px 0}.who{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:.08em}.turn p{margin:4px 0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:9px}.fact{padding:11px;border:1px solid var(--line);border-radius:8px}.fact b{display:block;font-size:12px}.fact span{font-size:13px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);font-size:11px;letter-spacing:.04em;text-transform:uppercase}th,td{padding:11px 8px;border-bottom:1px solid var(--line);vertical-align:top}.status{display:inline-block;border-radius:99px;padding:3px 7px;font-size:10px;font-weight:800;background:var(--warn-bg);color:var(--warn)}.check{color:var(--ok);font-weight:700}.foot{margin-top:18px;color:var(--muted);font-size:12px}@media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:29px}}
+</style>
+<main>
+  <span class="tag">DEMO ONLY · SYNTHETIC DATA</span>
+  <h1>日本就活 Agent<br>效果演示</h1>
+  <p class="lead">从少量画像补充到可审计的岗位研究快照。所有姓名、学校、公司、岗位和数据都为虚构测试资料。</p>
+  <div class="notice">此页面不展示真实求职者、真实企业或真实职位；演示不会提交申请。</div>
+  <div class="grid">
+    <section class="card"><h2>Guided Intake：只问影响结果的信息</h2>
+      <div class="turn"><span class="who">USER · FICTIONAL</span><p>我想去日本做 IT，先帮我建立求职画像，再找适合的公司。</p></div>
+      <div class="turn"><span class="who">AGENT</span><p>确认毕业年月、后端技术与项目、日语实际沟通能力、所在地与签证需求。</p></div>
+      <div class="turn"><span class="who">USER · FICTIONAL</span><p>2027 年毕业；Java / Spring Boot / MySQL / Docker；JLPT N2；需要签证支持；东京后端优先。</p></div>
+      <h2 style="margin-top:24px">保存的事实</h2><div class="facts"><div class="fact"><b>毕业与新卒</b><span>2027-06 · USER_CONFIRMED</span></div><div class="fact"><b>技术栈</b><span>Java · Spring Boot · MySQL · Docker</span></div><div class="fact"><b>日语</b><span>JLPT N2 · 可介绍项目</span></div><div class="fact"><b>签证</b><span>需要雇主支持</span></div></div>
+    </section>
+    <section class="card"><h2>发现结果：未知不伪装成已验证</h2>
+      <table><thead><tr><th>排序</th><th>虚构岗位</th><th>资格</th></tr></thead><tbody><tr><td>01</td><td><b>青凪ソフトウェア</b><br>Backend Engineer</td><td><span class="status">NEEDS_VERIFICATION</span></td></tr><tr><td>02</td><td><b>星環データ</b><br>Platform Engineer</td><td><span class="status">NEEDS_VERIFICATION</span></td></tr><tr><td>03</td><td><b>北斗クラウド</b><br>Application Engineer</td><td><span class="status">NEEDS_VERIFICATION</span></td></tr></tbody></table>
+      <p class="foot"><span class="check">✓</span> Java、Spring Boot、东京偏好用于排序<br><span class="check">✓</span> 签证、薪资、截止日期保留为待查<br><span class="check">✓</span> 状态为 RESEARCHING，未提交申请</p>
+    </section>
+  </div>
+  <p class="foot">Public repository demo · Run <code>python demo/run_demo_tests.py</code> to reproduce the checks.</p>
+</main>
+</html>

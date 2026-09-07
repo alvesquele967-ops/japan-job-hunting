@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "aonagi-software-fictional",
+  "kind": "company",
+  "updated_at": "2026-09-07T12:00:00+00:00",
+  "data": {
+    "demo_only": true,
+    "name": "Aonagi Software (fictional)",
+    "last_verified_at": "UNKNOWN",
+    "sources": [],
+    "facts": [
+      {"field":"eligibility","value":"UNKNOWN","source_ids":[],"recruitment_year":2027,"year_status":"UNKNOWN","verification_status":"NEEDS_VERIFICATION"},
+      {"field":"visa_support","value":"UNKNOWN","source_ids":[],"recruitment_year":2027,"year_status":"UNKNOWN","verification_status":"NEEDS_VERIFICATION"}
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Japan job hunting versioned record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "updated_at",
+    "data"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "profile",
+        "facts",
+        "preferences",
+        "stories",
+        "company",
+        "job",
+        "application",
+        "es",
+        "interview",
+        "offer",
+        "discovery"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "personalFact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "field": {
+          "type": "string"
+        },
+        "value": {},
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "USER_CONFIRMED",
+            "INFERRED",
+            "UNVERIFIED"
+          ]
+        },
+        "evidence": {},
+        "confirmed_at": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "field",
+        "value",
+        "status",
+        "evidence",
+        "confirmed_at"
+      ],
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "official": {
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "publication_date": {
+          "type": "string"
+        },
+        "last_updated": {
+          "type": "string"
+        },
+        "recruitment_year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "retrieved_at": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "url",
+        "source_type",
+        "official",
+        "publication_date",
+        "last_updated",
+        "recruitment_year",
+        "retrieved_at",
+        "confidence"
+      ],
+      "additionalProperties": true
+    },
+    "condition": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "HARD_CONSTRAINT",
+            "PREFERENCE"
+          ]
+        },
+        "field": {
+          "type": "string"
+        },
+        "value": {},
+        "fact_id": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "kind",
+        "field",
+        "value"
+      ],
+      "additionalProperties": true
+    },
+    "companyFact": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "value": {},
+        "source_ids": {
+          "type": "array"
+        },
+        "recruitment_year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "year_status": {
+          "enum": [
+            "CURRENT",
+            "PAST_REFERENCE",
+            "UNKNOWN"
+          ]
+        },
+        "verification_status": {
+          "enum": [
+            "CONFIRMED",
+            "NEEDS_VERIFICATION",
+            "SOURCE_CONFLICT",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "required": [
+        "field",
+        "value",
+        "source_ids",
+        "recruitment_year",
+        "year_status",
+        "verification_status"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "facts"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "facts": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/personalFact"
+                }
+              }
+            },
+            "required": [
+              "facts"
+            ],
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "preferences"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "constraints": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/condition"
+                }
+              },
+              "weights": {
+                "type": "object"
+              },
+              "priorities": {
+                "type": "array"
+              }
+            },
+            "required": [
+              "constraints"
+            ],
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "application"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "company_id": {
+                "type": "string"
+              },
+              "job_id": {
+                "type": "string"
+              },
+              "recruitment_year": {
+                "type": [
+                  "integer",
+                  "string"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "RESEARCHING",
+                  "INTERESTED",
+                  "ENTRY",
+                  "ES_PREPARING",
+                  "ES_SUBMITTED",
+                  "DOCUMENT_SCREENING",
+                  "WEB_TEST",
+                  "FIRST_INTERVIEW",
+                  "SECOND_INTERVIEW",
+                  "FINAL_INTERVIEW",
+                  "OFFER",
+                  "REJECTED",
+                  "WITHDRAWN"
+                ]
+              },
+              "deadlines": {
+                "type": "array"
+              },
+              "next_action": {},
+              "documents": {
+                "type": "array"
+              },
+              "pending": {
+                "type": "array"
+              },
+              "last_update": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "company_id",
+              "job_id",
+              "recruitment_year",
+              "status",
+              "deadlines",
+              "next_action",
+              "documents",
+              "pending",
+              "last_update"
+            ],
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  ]
+}

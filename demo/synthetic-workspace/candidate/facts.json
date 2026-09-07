@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "facts",
+  "kind": "facts",
+  "updated_at": "2026-09-07T12:00:00+00:00",
+  "data": {
+    "facts": [
+      {"id":"f-graduation","field":"graduation","value":"2027-06, software engineering bachelor's degree","status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"},
+      {"id":"f-stack","field":"technical_stack","value":["Java","Spring Boot","MySQL","Docker"],"status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"},
+      {"id":"f-project","field":"project","value":"Campus reservation system","status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"},
+      {"id":"f-japanese","field":"japanese","value":"JLPT N2; can explain a project in Japanese","status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"},
+      {"id":"f-location","field":"current_location","value":"China","status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"},
+      {"id":"f-visa","field":"visa_need","value":"Employer sponsorship required","status":"USER_CONFIRMED","evidence":"Synthetic demonstration user statement","confirmed_at":"2026-09-07T12:00:00+00:00"}
+    ]
+  }
+}

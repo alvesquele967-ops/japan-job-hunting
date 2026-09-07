@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "aonagi-backend-2027",
+  "kind": "application",
+  "updated_at": "2026-09-07T12:00:00+00:00",
+  "data": {
+    "company_id": "aonagi-software-fictional",
+    "job_id": "backend-engineer-fictional",
+    "recruitment_year": 2027,
+    "status": "RESEARCHING",
+    "deadlines": [],
+    "next_action": "Verify official recruiting page; this is a fictional demonstration record.",
+    "documents": [],
+    "pending": ["eligibility", "visa_support", "compensation", "deadline"],
+    "last_update": "2026-09-07T12:00:00+00:00"
+  }
+}

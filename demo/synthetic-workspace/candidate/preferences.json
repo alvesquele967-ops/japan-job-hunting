@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "preferences",
+  "kind": "preferences",
+  "updated_at": "2026-09-07T12:00:00+00:00",
+  "data": {
+    "constraints": [
+      {"kind":"HARD_CONSTRAINT","field":"visa_support","value":"required","fact_id":"f-visa"},
+      {"kind":"PREFERENCE","field":"location","value":"Tokyo","weight":5},
+      {"kind":"PREFERENCE","field":"role","value":"Java backend","weight":5}
+    ],
+    "priorities": ["eligibility", "role", "location"],
+    "weights": {"role": 5, "location": 5}
+  }
+}
