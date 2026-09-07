@@ -1,5 +1,5 @@
 """Discover templates without modifying them. PDF inspection uses optional pypdf."""
-import argparse,hashlib,json,zipfile
+import argparse,hashlib,json,sys,zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -33,4 +33,6 @@ def scan(directory):
         rows.append(row)
     return rows
 if __name__=='__main__':
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--directory',type=Path,required=True);a=p.parse_args();print(json.dumps(scan(a.directory),ensure_ascii=False,indent=2))
